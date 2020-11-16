@@ -1,0 +1,48 @@
+.swipe-up-container {
+   animation: swipeUpAni 10s ease-in-out, swipeUpShakeAni 1s ease-in-out infinite;
+   animation-delay: 0s, 9s;
+}
+
+.d-none {
+    display: none;
+}
+//Target smarthphones and touchscreens
+@media (hover: none) and (pointer: coarse){
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: unset;
+    }
+}
+@keyframes swipeUpAni {
+    0% {
+        transform: translate(0,100vh);
+        filter: contrast(0);
+    }
+    60% {
+        transform: translate(0,90vh);
+    }
+    90% {
+        transform: translate(0,1vh);
+
+    }
+    100% {
+        transform: translate(0,0);
+        filter: contrast(1);
+    }
+}
+@keyframes swipeUpShakeAni {
+    0% {
+        transform: translate(0,1vh);
+
+    }
+    50% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(0,1vh);
+
+    }
+
+}

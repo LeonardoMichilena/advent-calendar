@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "calendario-de-adviento-7c20e": {
+      "hosting": {
+        "calendario-de-adviento": [
+          "calendario-de-adviento-7c20e"
+        ]
+      }
+    }
+  }
+}
